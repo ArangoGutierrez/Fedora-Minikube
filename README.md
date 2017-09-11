@@ -10,7 +10,7 @@ Minikube is a tool that makes it easy to run Kubernetes locally. Minikube runs a
 
 ### Pre-requirements
 To install minikube you will first need
- - Docker ce
+ - [Docker-ce Fedora install](https://docs.docker.com/engine/installation/linux/docker-ce/fedora/)
 
 ### Installing
 first clone the repo and enter to the repo folder
