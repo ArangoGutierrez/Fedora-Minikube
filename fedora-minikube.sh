@@ -75,7 +75,10 @@ touch $HOME/.kube/config
 fi
 
 export KUBECONFIG=$HOME/.kube/config
-sudo -E ./minikube start --vm-driver=none
+sudo -E ./minikube start --vm-driver=kvm
+
+# Set a context for Kubectl
+kubectl config use-context minikube
 
 # this for loop waits until kubectl can access the api server that minikube has created
 for i in {1..150} # timeout for 5 minutes
